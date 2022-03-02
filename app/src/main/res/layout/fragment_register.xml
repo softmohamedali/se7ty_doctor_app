@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.RegisterFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/register_now"
+            style="@style/CustomText_3"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/specialty"
+            style="@style/CustomText_2"
+            android:textAlignment="textStart"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <EditText
+            android:id="@+id/spetiality_et_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/select_your_specialist"
+            android:focusable="false"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="@+id/textView18"
+            app:layout_constraintStart_toStartOf="@+id/textView18"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            style="@style/CustomText_2"
+            android:textAlignment="textStart"
+            android:textColor="@color/green"
+            android:text="@string/title_in_english"
+            app:layout_constraintEnd_toEndOf="@+id/spetiality_et_register"
+            app:layout_constraintStart_toStartOf="@+id/spetiality_et_register"
+            app:layout_constraintTop_toBottomOf="@+id/spetiality_et_register" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/title_box_et_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/select_title"
+            app:layout_constraintEnd_toEndOf="@+id/textView10"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+            <AutoCompleteTextView
+                android:id="@+id/title_en_et_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:inputType="none"
+            />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/gender"
+            style="@style/CustomText_2"
+            android:textAlignment="textStart"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="@+id/title_box_et_register"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/title_box_et_register"
+            app:layout_constraintTop_toBottomOf="@+id/full_name_en_et_register" />
+
+        <RadioGroup
+            android:id="@+id/gender_rg_register"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingEnd="40dp"
+            android:paddingStart="40dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView11"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+            <RadioButton
+                android:layout_weight="1"
+                android:id="@+id/male_rb_register"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                 />
+            <RadioButton
+                android:layout_weight="1"
+                android:id="@+id/famale_rb_register"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/phone_number"
+            style="@style/CustomText_2"
+            android:textAlignment="textStart"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="@+id/gender_rg_register"
+            app:layout_constraintStart_toStartOf="@+id/gender_rg_register"
+            app:layout_constraintTop_toBottomOf="@+id/gender_rg_register" />
+
+        <EditText
+            android:id="@+id/phone_et_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enter_your_phone_number"
+            app:layout_constraintEnd_toEndOf="@+id/textView12"
+            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/email"
+            style="@style/CustomText_2"
+            android:textAlignment="textStart"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="@+id/phone_et_register"
+            app:layout_constraintStart_toStartOf="@+id/phone_et_register"
+            app:layout_constraintTop_toBottomOf="@+id/phone_et_register" />
+
+        <EditText
+            android:id="@+id/email_et_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enter_your_emaill"
+            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_et_register_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="@string/enter_your_pasword"
+            app:endIconMode="password_toggle"
+            app:layout_constraintEnd_toEndOf="@+id/email_et_register"
+            app:layout_constraintStart_toStartOf="@+id/email_et_register"
+            app:layout_constraintTop_toBottomOf="@+id/email_et_register">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_et_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_confirm_et_register_contaier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="@string/re_enter_your_password"
+            app:endIconMode="password_toggle"
+            app:layout_constraintEnd_toEndOf="@+id/password_et_register_container"
+            app:layout_constraintStart_toStartOf="@+id/password_et_register_container"
+            app:layout_constraintTop_toBottomOf="@+id/password_et_register_container">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_confirm_et_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/full_name_in_english"
+            style="@style/CustomText_2"
+            android:textAlignment="textStart"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="@+id/title_box_et_register"
+            app:layout_constraintStart_toStartOf="@+id/title_box_et_register"
+            app:layout_constraintTop_toBottomOf="@+id/title_box_et_register" />
+
+        <EditText
+            android:id="@+id/full_name_en_et_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/enter_your_full_name"
+            app:layout_constraintEnd_toEndOf="@+id/textView17"
+            app:layout_constraintStart_toStartOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+
+        <CheckBox
+            android:id="@+id/terms_ch_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/agree_on"
+            app:layout_constraintStart_toStartOf="@+id/password_confirm_et_register_contaier"
+            app:layout_constraintTop_toBottomOf="@+id/password_confirm_et_register_contaier" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/terms_and_conditions"
+            style="@style/CustomText_2"
+            android:textAlignment="textStart"
+            android:textColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="@+id/terms_ch_register"
+            app:layout_constraintEnd_toEndOf="@+id/spetiality_et_register"
+            app:layout_constraintStart_toEndOf="@+id/terms_ch_register"
+            app:layout_constraintTop_toTopOf="@+id/terms_ch_register" />
+
+        <Button
+            android:id="@+id/register_btn_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/next"
+            app:backgroundTint="@color/green"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView19"
+            app:layout_constraintStart_toStartOf="@+id/terms_ch_register"
+            app:layout_constraintTop_toBottomOf="@+id/terms_ch_register" />
+
+        <ProgressBar
+            android:id="@+id/pb_register"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/green"
+            app:layout_constraintBottom_toTopOf="@+id/register_btn_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.31" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

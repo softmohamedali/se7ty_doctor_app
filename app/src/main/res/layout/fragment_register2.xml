@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.Register2Fragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/img_register2"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_add_photo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+
+        <TextView
+            android:id="@+id/tv_gender"
+            style="@style/CustomText_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/full_name_in_arabic"
+            android:textAlignment="textStart"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_register2" />
+
+        <EditText
+            android:id="@+id/namr_ar_et_register2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="الاسم الكامل بالعربي"
+            app:layout_constraintEnd_toEndOf="@+id/tv_gender"
+            app:layout_constraintStart_toStartOf="@+id/tv_gender"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gender" />
+
+        <TextView
+            android:id="@+id/textwqViewk10"
+            style="@style/CustomText_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/date_of_brith"
+            android:textAlignment="textStart"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namr_ar_et_register2" />
+
+        <EditText
+            android:id="@+id/date_bridth_et_register2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/select_data_of_brirth"
+            app:layout_constraintEnd_toEndOf="@+id/textwqViewk10"
+            app:layout_constraintStart_toStartOf="@+id/textwqViewk10"
+            app:layout_constraintTop_toBottomOf="@+id/textwqViewk10" />
+
+        <TextView
+            android:id="@+id/texewtViewk10"
+            style="@style/CustomText_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/description_in_english"
+            android:textAlignment="textStart"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_bridth_et_register2" />
+
+        <EditText
+            android:id="@+id/description_en_et_register2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/description"
+            app:layout_constraintEnd_toEndOf="@+id/texewtViewk10"
+            app:layout_constraintStart_toStartOf="@+id/texewtViewk10"
+            app:layout_constraintTop_toBottomOf="@+id/texewtViewk10" />
+
+        <TextView
+            android:id="@+id/textVidewkre10"
+            style="@style/CustomText_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/description_in_arbic"
+            android:textAlignment="textStart"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description_en_et_register2" />
+
+        <EditText
+            android:id="@+id/discription_ar_et_register2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/descrpition_in_arabic"
+            app:layout_constraintEnd_toEndOf="@+id/textVidewkre10"
+            app:layout_constraintStart_toStartOf="@+id/textVidewkre10"
+            app:layout_constraintTop_toBottomOf="@+id/textVidewkre10" />
+
+        <TextView
+            android:id="@+id/textwViewk10"
+            style="@style/CustomText_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/medical_id_numer"
+            android:textAlignment="textStart"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/discription_ar_et_register2" />
+
+        <EditText
+            android:id="@+id/medical_id_number_et_register2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter your medical id Number"
+            app:layout_constraintEnd_toEndOf="@+id/textwViewk10"
+            app:layout_constraintStart_toStartOf="@+id/textwViewk10"
+            app:layout_constraintTop_toBottomOf="@+id/textwViewk10" />
+
+        <TextView
+            android:id="@+id/textViewk1w0"
+            style="@style/CustomText_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/medical_title"
+            android:textAlignment="textStart"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medical_id_number_et_register2" />
+
+        <EditText
+            android:id="@+id/medical_id_photo_et_register2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="@string/select_your_medical_id_photo"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/textViewk1w0"
+            app:layout_constraintStart_toEndOf="@+id/add_medical_photo_btn_register2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewk1w0" />
+
+        <TextView
+            android:id="@+id/textViewkre10"
+            style="@style/CustomText_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/country"
+            android:textAlignment="textStart"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medical_id_photo_et_register2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/country_et_register2vsfvf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/select_your_country"
+            app:layout_constraintEnd_toEndOf="@+id/textViewkre10"
+            app:layout_constraintStart_toStartOf="@+id/textViewkre10"
+            app:layout_constraintTop_toBottomOf="@+id/textViewkre10"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+            <AutoCompleteTextView
+                android:id="@+id/country_et_register2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:inputType="none"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textfViewkre10"
+            style="@style/CustomText_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/city"
+            android:textAlignment="textStart"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/country_et_register2vsfvf" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/city_et_regisagfasdgter2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/select_your_city"
+            app:layout_constraintEnd_toEndOf="@+id/textfViewkre10"
+            app:layout_constraintStart_toStartOf="@+id/textfViewkre10"
+            app:layout_constraintTop_toBottomOf="@+id/textfViewkre10"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+            <AutoCompleteTextView
+                android:id="@+id/city_et_register2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:inputType="none"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textViewkre1v0"
+            style="@style/CustomText_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/spoken_language"
+            android:textAlignment="textStart"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/city_et_regisagfasdgter2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/spoken_languge_et_register2lnjllkln"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/select_spoken_langusage"
+            app:layout_constraintEnd_toEndOf="@+id/textViewkre1v0"
+            app:layout_constraintStart_toStartOf="@+id/textViewkre1v0"
+            app:layout_constraintTop_toBottomOf="@+id/textViewkre1v0"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+            <AutoCompleteTextView
+                android:id="@+id/spoken_languge_et_register2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:inputType="none"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/register_btn_register2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/register_now"
+            app:backgroundTint="@color/green"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/spoken_languge_et_register2lnjllkln"
+            app:layout_constraintStart_toStartOf="@+id/spoken_languge_et_register2lnjllkln"
+            app:layout_constraintTop_toBottomOf="@+id/spoken_languge_et_register2lnjllkln" />
+
+        <ProgressBar
+            android:id="@+id/pb_register2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/green"
+            app:layout_constraintBottom_toTopOf="@+id/register_btn_register2"
+            app:layout_constraintEnd_toEndOf="@+id/discription_ar_et_register2"
+            app:layout_constraintStart_toStartOf="@+id/discription_ar_et_register2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/background_loading"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/add_medical_photo_btn_register2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/none"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_add"
+            app:tint="@color/green"
+            app:layout_constraintBottom_toBottomOf="@+id/medical_id_photo_et_register2"
+            app:layout_constraintStart_toStartOf="@+id/textViewk1w0"
+            app:layout_constraintTop_toTopOf="@+id/medical_id_photo_et_register2" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/CustomText_3"
+            android:textColor="@color/green"
+            android:text="@string/personal_information"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

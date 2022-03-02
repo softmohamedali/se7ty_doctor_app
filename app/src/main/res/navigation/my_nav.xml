@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/toddyAppointmentsFragment">
+
+    <action
+        android:id="@+id/glopal_to_logInFragment"
+        app:destination="@id/logInFragment"
+        app:popUpTo="@id/my_nav"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/glopal_to_doctor_info"
+        app:destination="@id/doctorInfoFragment"
+        app:popUpTo="@id/my_nav" />
+
+    <fragment
+        android:id="@+id/myApponitmentFragment"
+        android:name="com.example.doctors_app.ui.body.MyApponitmentFragment"
+        android:label="fragment_my_apponitment"
+        tools:layout="@layout/fragment_my_apponitment" >
+        <action
+            android:id="@+id/action_myApponitmentFragment_to_viewClientEMRFragment"
+            app:destination="@id/viewClientEMRFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/myCreditFragment"
+        android:name="com.example.doctors_app.ui.body.MyCreditFragment"
+        android:label="fragment_my_credit"
+        tools:layout="@layout/fragment_my_credit" />
+    <fragment
+        android:id="@+id/myScheduleFragment"
+        android:name="com.example.doctors_app.ui.body.MyScheduleFragment"
+        android:label="fragment_my_schedule"
+        tools:layout="@layout/fragment_my_schedule" />
+    <fragment
+        android:id="@+id/toddyAppointmentsFragment"
+        android:name="com.example.doctors_app.ui.body.ToddyAppointmentsFragment"
+        android:label="fragment_toddy_appointments"
+        tools:layout="@layout/fragment_toddy_appointments" >
+        <action
+            android:id="@+id/action_toddyAppointmentsFragment_to_logInFragment"
+            app:destination="@id/logInFragment"
+            app:popUpTo="@id/my_nav"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_toddyAppointmentsFragment_to_register2Fragment"
+            app:destination="@id/register2Fragment" />
+        <action
+            android:id="@+id/action_toddyAppointmentsFragment_to_viewClientEMRFragment"
+            app:destination="@id/viewClientEMRFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.example.doctors_app.ui.auth.LogInFragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logInFragment_to_toddyAppointmentsFragment"
+            app:destination="@id/toddyAppointmentsFragment"
+            app:popUpTo="@id/my_nav"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_logInFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_logInFragment_to_forgetPasswordFragment"
+            app:destination="@id/forgetPasswordFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.doctors_app.ui.auth.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_register2Fragment"
+            app:destination="@id/register2Fragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_cheakSpecialistFragment"
+            app:destination="@id/cheakSpecialistFragment" />
+        <argument
+            android:name="spitialistName"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue=" " />
+    </fragment>
+    <fragment
+        android:id="@+id/register2Fragment"
+        android:name="com.example.doctors_app.ui.auth.Register2Fragment"
+        android:label="fragment_register2"
+        tools:layout="@layout/fragment_register2" >
+        <action
+            android:id="@+id/action_register2Fragment_to_toddyAppointmentsFragment"
+            app:destination="@id/toddyAppointmentsFragment" />
+        <action
+            android:id="@+id/action_register2Fragment_to_logInFragment"
+            app:destination="@id/logInFragment"
+            app:popUpTo="@id/my_nav"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/cheakSpecialistFragment"
+        android:name="com.example.doctors_app.ui.auth.CheakSpecialistFragment"
+        android:label="fragment_cheak_specialist"
+        tools:layout="@layout/fragment_cheak_specialist" >
+        <action
+            android:id="@+id/action_cheakSpecialistFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:popUpTo="@id/registerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetPasswordFragment"
+        android:name="com.example.doctors_app.ui.auth.ForgetPasswordFragment"
+        android:label="fragment_forget_password"
+        tools:layout="@layout/fragment_forget_password" />
+    <fragment
+        android:id="@+id/doctorInfoFragment"
+        android:name="com.example.doctors_app.ui.body.DoctorInfoFragment"
+        android:label="fragment_doctor_info"
+        tools:layout="@layout/fragment_doctor_info" >
+        <action
+            android:id="@+id/action_doctorInfoFragment_to_pickDoctorPositionFragment"
+            app:destination="@id/pickDoctorPositionFragment" />
+        <argument
+            android:name="lati"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue=" " />
+        <argument
+            android:name="long"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue=" " />
+    </fragment>
+    <fragment
+        android:id="@+id/pickDoctorPositionFragment"
+        android:name="com.example.doctors_app.ui.body.PickDoctorPositionFragment"
+        android:label="fragment_pick_doctor_position"
+        tools:layout="@layout/fragment_pick_doctor_position" >
+        <action
+            android:id="@+id/action_pickDoctorPositionFragment_to_doctorInfoFragment"
+            app:destination="@id/doctorInfoFragment"
+            app:popUpTo="@id/my_nav"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewClientEMRFragment"
+        android:name="com.example.doctors_app.ui.body.ViewClientEMRFragment"
+        android:label="fragment_view_client_e_m_r"
+        tools:layout="@layout/fragment_view_client_e_m_r" >
+        <argument
+            android:name="client"
+            app:argType="com.example.doctors_app.models.Client" />
+    </fragment>
+</navigation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/myScheduleFragment"
+        android:title="My Schedule"
+        android:icon="@drawable/ic_schedule"/>
+
+    <item android:id="@+id/doctorInfoFragment"
+        android:title="My Info"
+        android:icon="@drawable/ic_person"/>
+
+    <item android:id="@+id/toddyAppointmentsFragment"
+        android:title="Toddy Appointments"
+        android:icon="@drawable/ic_squre"/>
+
+    <item android:id="@+id/myApponitmentFragment"
+        android:title="My Apponitment"
+        android:icon="@drawable/ic_time"/>
+
+</menu>
